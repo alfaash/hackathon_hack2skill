@@ -5,95 +5,344 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <style>
-    body{
-      padding:0;
-      margin:0;
-    }
-  #get_started{
-    color:#393D3F;
-    background-color:#C6C5B9;
-    transition: transform 0.3s;
-  }
-  #get_started:hover{
-    color:white;
-    background-color:#393D3F; 
-    transform:scale(1.05);
-  }
-  #navbarSupportedContent{
-    width:100px;
-  }
-  .navbar-button{
-    border:3px solid #62929E;
-    padding:1px 2px 1px 2px;
-    margin:5px 0px 0px 0px;
-    border-radius: 5px;
-  }
-  .navbar-button:hover{
-    color:#62929E;
-    background-color: #C6C5B9;
-    border:3px solid transparent;
-  }
-  #dropdown-menu{
-    margin-top: -1px;
-    padding:0px;
-  }
-  .main-page{
 
-  }
-  </style>
-  <body>
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color: white;">
-        <div class="container">
-            <a class="navbar-brand me-5" href="#">
-                <img src="Screenshot_2025-02-21_215244-removebg-preview.png" alt="Bootstrap" width="150" height="30">
-            </a>
-          <div class="pe-lg-5 d-block d-sm-none">
-            <ul class="navbar-nav mb-2 mb-lg-0 me-0 mt-2 pe-0 ms-lg-5">
-              <li class="nav-item mx-3 ms-lg-5">
-                <button type="button" class="nav-link fw-bolder btn p-2 ms-lg-5" href="#get_started" id="get_started">Get Started</button>
-              </li>  
-            </ul>
-          </div>
-          <button class="navbar-toggler mx-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse px-0 mx-0" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 me-0 ">
+<body>
+  <nav class="navbar navbar-expand-md fixed-top" style="background-color: white;">
+      <div class="container">
+          <a class="navbar-brand me-5" href="#">
+              <img src="Screenshot_2025-02-21_215244-removebg-preview.png" alt="Bootstrap" width="150" height="30">
+          </a>
+        <div class="pe-lg-5 d-block d-sm-none">
+          <ul class="navbar-nav mb-2 mb-lg-0 me-0 mt-2 pe-0 ms-lg-5">
+            <li class="nav-item mx-3 ms-lg-5">
+              <button type="button" class="nav-link fw-bolder btn p-2 ms-lg-5" href="#get_started" id="get_started">Get Started</button>
+            </li>  
+          </ul>
+        </div>
+        <button class="navbar-toggler mx-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            </ul>
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 me-5 ">
-              <li class="nav-item mx-3 ms-lg-5 d-none d-xxl-block">
-                <button type="button" class="nav-link fw-bolder btn p-2 ms-lg-5" href="#get_started" id="get_started">Get Started</button>
-              </li>  
-              <li class="nav-item mx-3">
-                <a class="nav-link fw-bolder text-center navbar-button" href="#login">Login</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link fw-bolder text-center navbar-button" href="#sign_up">Sign Up</a>
-              </li>
-              <div class="dropdown show d-none d-xxl-block navbar-button" id="dropdown-menu">
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Language
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">English</a>
-                  <a class="dropdown-item" href="#">Hindi</a>
-                </div>
+        <div class="collapse navbar-collapse px-0 mx-0" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 me-0 ">
+
+          </ul>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 me-5 ">
+            <li class="nav-item mx-3 ms-lg-5 d-none d-xxl-block">
+              <button type="button" class="nav-link fw-bolder btn p-2 ms-lg-5" href="#get_started" id="get_started">Get Started</button>
+            </li>  
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bolder text-center navbar-button" href="#login">Login</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bolder text-center navbar-button" href="#sign_up">Sign Up</a>
+            </li>
+            <div class="dropdown show d-none d-xxl-block  mx-2" id="dropdown-menu">
+              <a class="btn dropdown-toggle navbar-button fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Hindi</a>
               </div>
-            </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <!-- BG image and search bar -->
+  <section class="mt-5 pt-5 main-page bg-image mx-xxl-0 px-xxl-0 d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center pb-2 px-0" id="main_text">Find Jobs or Workers Instantly!</h1>
+    <div class="mb-5 pb-xxl-5 d-flex flex-row">
+      <input type="email" class="form-control px-xxl-5 text-center" id="exampleFormControlInput1" placeholder="Search for Wokers or Jobs">
+      <button type="submit" class="btn btn-primary ms-2">Search</button>
+    </div>
+  </section>
+  <!-- how it works section -->
+  <section>
+    <div class="sec1">
+      <h1 class="">How it works?</h1>
+    </div>
+    <div class="sec2 d-flex flex-column justify-content-center align-items-center">
+      <h2 class="fw-bold">1. Post a Job</h2>
+      <p class="fs-3">Describe your job requirements and post it on Workconnect</p>
+    </div>
+    <div class="sec3 d-flex flex-column justify-content-center align-items-center">
+      <h2 class="fw-bold">2. Get Matched</h2>
+      <p class="fs-3">We match you with skilled workers or the right work based on your needs</p>
+    </div>
+    <div class="sec4 d-flex flex-column justify-content-center align-items-center">
+      <h2 class="fw-bold">3. Hire and Get Paid</h2>
+      <p class="fs-3">Hire the best workers and get paid accordingly</p>
+    </div>
+  </section>  
+
+
+  <!-- featured jobs and workers section -->
+  <section class="container d-flex flex-column" id="job_work_sec">
+    <h1 class="mb-5">Recommended Jobs,</h1>
+    <!-- featured jobs -->
+    <div class="d-flex justify-content-evenly row">
+      
+      <!-- card 1 -->
+      <div class="card rounded-4 m-1  col-lg-3 ">
+        <div class="card m-1 mt-3 card-one rounded-4">
+          <div class="card-head m-2">
+            <p class="card-date p-1 m-1 rounded-4">18 Aug, 2024</p>
+          </div>
+
+          <div class="card-body">
+            <div class="job-provider d-flex flex-row">
+              <img src="person1.png" alt="" class="rounded-circle">
+              <p class=" m-1 mt-2">Anand Mishra</p>
+            </div>
+            <div class="job-details">
+              <h3 class="text-center">Woodwork</h3>
+              <p class="mb-0" id="job-timeline">Workday: 2 days</p>
+              <p class="mb-3" id="job-pay-method">Payment: Hourly</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="pay-details d-flex flex-row justify-content-between my-3">
+          <div class="money-location d-flex flex-column mx-3">
+            <p class="m-0 p-0">$5/hr</p>
+            <p class="m-0 p-0" id="pay-details-location">Imphal,MN</p>
+          </div>
+          <button class=" rounded-pill mx-4 px-4  py-0">Details</button>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="card rounded-4 m-1 col-lg-3 ">
+        <div class="card m-1 mt-3 card-two rounded-4">
+          <div class="card-head m-2">
+            <p class="card-date p-1 m-1 rounded-4">25 Dec, 2024</p>
+          </div>
+
+          <div class="card-body">
+            <div class="job-provider d-flex flex-row">
+              <img src="person2.png" alt="" class="rounded-circle">
+              <p class=" m-1 mt-2">Prakash Singh</p>
+            </div>
+            <div class="job-details">
+              <h3 class="text-center">Plumbing</h3>
+              <p class="mb-0" id="job-timeline">Workday: 1 days</p>
+              <p class="mb-3" id="job-pay-method">Payment: Daily</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="pay-details d-flex flex-row justify-content-between my-3">
+          <div class="money-location d-flex flex-column mx-3">
+            <p class="m-0 p-0">$3/hr</p>
+            <p class="m-0 p-0" id="pay-details-location">Siwan,BR</p>
+          </div>
+          <button class=" rounded-pill mx-4 px-4  py-0">Details</button>
+        </div>
+      </div>
+  
+      <!-- card 3 -->
+      <div class="card rounded-4 m-1 col-lg-3">
+        <div class="card m-1 mt-3 card-three rounded-4">
+          <div class="card-head m-2">
+            <p class="card-date p-1 m-1 rounded-4">13 Jan, 2025</p>
+          </div>
+
+          <div class="card-body">
+            <div class="job-provider d-flex flex-row">
+              <img src="person3.png" alt="" class="rounded-circle">
+              <p class=" m-1 mt-2">Priya Sharma</p>
+            </div>
+            <div class="job-details">
+              <h3 class="text-center">Painting</h3>
+              <p class="mb-0" id="job-timeline">Workday: 3 days</p>
+              <p class="mb-3" id="job-pay-method">Payment: Daily</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="pay-details d-flex flex-row justify-content-between my-3">
+          <div class="money-location d-flex flex-column mx-3">
+            <p class="m-0 p-0">$2/hr</p>
+            <p class="m-0 p-0" id="pay-details-location">Kanpur,UP</p>
+          </div>
+          <button class=" rounded-pill mx-4 px-4  py-0">Details</button>
+        </div>
+      </div>
+
+    </div>
+    <!-- featured workers -->
+    <h1 class="my-5">Recommended Workers,</h1>
+      <div class="d-flex justify-content-evenly row">
+        <!-- card4 -->
+        <div class="card card-four rounded-4 col-lg-3 d-flex justify-content-center align-items-center m-3">
+          <img src="person4.png" alt="" class="m-2 rounded-4 mt-4">
+          <p class="card-four-job my-0">Carpenter</p>
+          <p class="my-0">Ramesh Singh</p>
+          <button class="rounded-pill mx-4 px-4 py-0 my-2">Contact</button>
+        </div>
+
+        <!-- card5 -->
+        <div class="card card-five rounded-4 col-lg-3 d-flex justify-content-center align-items-center m-3">
+          <img src="person5.png" alt="" class="m-2 rounded-4 mt-4">
+          <p class="card-five-job my-0">Painter</p>
+          <p class="my-0">Sita Sharma</p>
+          <button class="rounded-pill mx-4 px-4 py-0 my-2">Contact</button>
+        </div>
+
+        <!-- card6 -->
+        <div class="card card-six rounded-4 col-lg-3 d-flex justify-content-center align-items-center m-3">
+          <img src="person6.png" alt="" class="m-2 rounded-4 mt-4">
+          <p class="card-six-job my-0">House Help</p>
+          <p class="my-0">Payal Gupta</p>
+          <button class="rounded-pill mx-4 px-4 py-0 my-2">Contact</button>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- reviews section -->
+  <section class="container py-5">
+    <div class="carousel slide" id="carouselDemo">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>          
+        <div class="carousel-inner rounded-5" id="reviews_inner">
+          <h1 class="py-4 text-center text-white" style="font-weight: 800;">Reviews</h1>
+              <div class="carousel-item active text-center pb-5">
+                  <img src="person1.png" class=" rounded-circle" alt="..." height="75px" >
+                  <h5 class="text-secondary">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind  texts."</h5>
+                  <p class="text-white">Joohnthan Doe - Front End</p>
+              </div>
+              <div class="carousel-item text-center pb-5">
+                <img src="person2.png" class=" rounded-circle" alt="..." height="75px" >
+                <h5 class="text-secondary">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind  texts."</h5>
+                <p class="text-white">emily shire - back End</p>
+              </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>    
+  </section>
+
+  <!-- footer section -->
+  <footer class="text-center text-white" style="background-color: #546A7B">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Devlopers</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              distinctio earum repellat quaerat voluptatibus placeat nam,
+              commodi optio pariatur est quia magnam eum harum corrupti
+              dicta, aliquam sequi voluptate quas.
+            </p>
           </div>
         </div>
-    </nav>
-    <section class="container mt-5 pt-5 main-page bg-image mx-xxl-0 px-xxl-0" style="height:95vh;
-    background-image: url('Screenshot 2025-02-22 221534.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;">
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Social -->
+      <section class="text-center mb-5">
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
+      <!-- Section: Social -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
 </html> 
