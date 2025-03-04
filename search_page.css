@@ -1,0 +1,113 @@
+body{
+    padding: 0;
+    margin:0;
+}
+nav{
+    background-color:#62929E;
+}
+.search-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.search-box {
+    position: relative;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.search-input {
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    height: 50px;
+}
+
+.search-input:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    z-index: 10;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-50%) scale(1.05);
+}
+#main_sec{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card-date{
+    background-color: white;
+    display: inline;
+    }
+    .card-one{
+    background-color: rgb(253, 232, 206);
+    }
+    .card-two{
+    background-color: rgb(205, 231, 240);
+    }
+    .card-three{
+    background-color: rgb(167, 249, 221);
+    }
+    .card-four{
+        background-color: rgb(167, 249, 221);
+    }
+    .card-five{
+        background-color: rgb(253, 232, 206);
+    }
+    .card-six{
+        background-color: rgb(205, 231, 240);
+    }
+    .card-seven{
+    background-color: rgb(253, 232, 206);
+    }
+    .card-eight{
+    background-color: rgb(205, 231, 240);
+    }
+    .card-nine{
+    background-color: rgb(167, 249, 221);
+    }
+    .job-provider img{
+    width:6vh;
+    }
+    #pay-details-location{
+    font-size: small;
+    color:grey;
+    }
+    .pay-details button{
+    font-size: small;
+    color: white;
+    background-color:purple;
+    border:1px solid purple;
+    transition: transform 0.3s;
+    }
+    .pay-details button:hover{
+    border:1px solid white;
+    transform:scale(1.05);
+    }
