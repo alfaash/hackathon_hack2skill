@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main_page.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <section class="row">
+        <div class="col-xxl-4 d-flex flex-column border border-5">
+            <div class="d-flex flex-column justify-content-center align-items-center" id="name_img">
+                <div class="job-provider d-flex flex-column">
+                    <img src="person1.png" alt="" class="rounded-circle">
+                    <h5 class="ms-2 mt-3">Anand Mishra</h5>
+                </div>
+            </div>
+            <div class="container px-5 pt-3 mb-5 pb-3 mt-5">
+                <div class="container d-flex d-column justify-content-start align-items-center border border-1 border-dark rounded-top">
+                    <h6 class="py-3">Personal Details</h6>
+                </div>
+                <div class="container py-4 d-flex d-row justify-content-start align-items-center border border-1 border-dark">
+                    <h6 class="text-secondary col-5">Full Name:</h6>
+                    <h6 class="col-8">Anand Prakash Mishra</h6>
+                </div>
+                <div class="container py-4  d-flex d-row justify-content-start align-items-center border border-1 border-dark">
+                    <h6 class="text-secondary col-5">Date of Birth:</h6>
+                    <h6 class="col-8">january,1,1999</h6>
+                </div>
+                <div class="container py-4  d-flex d-row justify-content-start align-items-center border border-1 border-dark">
+                    <h6 class="text-secondary col-5">Gender:</h6>
+                    <h6 class="col-8">Male</h6>
+                </div>
+                <div class="container py-4  d-flex d-row justify-content-start align-items-center border border-1 border-dark">
+                    <h6 class="text-secondary col-5">Address</h6>
+                    <h6 class="col-8">Imphal, Manipur</h6>
+                </div>
+                <div class="container py-4  d-flex d-row justify-content-start align-items-center border border-1 border-dark rounded-bottom mb-5">
+                    <h6 class="text-secondary col-5">Phone Number:</h6>
+                    <h6 class="col-8">8989898989</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-8">
+            <div class="container row">
+                <div class="mt-5 col-xxl-6  d-flex flex-row align-items-center justify-content-center">
+                    <button style="--content: 'Post a Job!';" id="btn_job">
+                        <div class="left"></div>Post a Job<div class="right"></div>
+                    </button>
+                </div>
+                <div class="mt-5 col-xxl-6  d-flex flex-row align-items-center justify-content-center">
+                    <button style="--content: 'Get a Job!';" id="btn_job">
+                        <div class="left"></div>Get a Job<div class="right"></div>
+                    </button>
+                </div>
+            </div>
+            <section class="container py-5">
+                <div class="carousel slide" id="carouselDemo">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDemo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  </div>          
+                    <div class="carousel-inner rounded-5" id="reviews_inner">
+                      <h1 class="py-4 text-center text-white" style="font-weight: 800;">Your Reviews</h1>
+                          <div class="carousel-item active text-center pb-5">
+                              <img src="person6.png" class=" rounded-circle" alt="..." height="75px" >
+                              <p class="text-white">Joohnthan Doe</p>
+                              <h5 class="text-secondary">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind  texts."</h5>
+                              
+                          </div>
+                          <div class="carousel-item text-center pb-5">
+                            <img src="person5.png" class=" rounded-circle" alt="..." height="75px" >
+                            <p class="text-white">Emily Shire</p>
+                            <h5 class="text-secondary">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind  texts."</h5>
+                            
+                          </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDemo" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDemo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>    
+            </section>
+            <section class="rounded-5" id="your_rating">
+                <div class="d-flex flex-column">
+                    <h1 class="py-4 text-center text-white" style="font-weight: 800;">Your Rating</h1>
+                    
+                    <div class="stars d-flex flex-row justify-content-evenly px-5 mx-5 mb-5">
+                        <i class="fa-solid fa-star" id="star-1"></i>
+                        <i class="fa-solid fa-star" id="star-2"></i>
+                        <i class="fa-solid fa-star" id="star-3"></i>
+                        <i class="fa-regular fa-star" id="star-4"></i>
+                        <i class="fa-regular fa-star" id="star-5"></i>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script defer src="https://cdn.jsdelivr.net/npm/@coreui/coreui-pro@5.10.0/dist/js/coreui.bundle.min.js"></script>
+    <script src="main_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
