@@ -85,3 +85,6 @@ star_five.addEventListener("mouseout", event => {
     star_four.className=star_four_class;
     star_five.className=star_five_class;
 });
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("sidebar").classList.toggle("active");
+});
